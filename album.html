@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>相册 | Places We Keep</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a class="brand" href="./index.html">
+          <span>Places</span>
+          <span>We Keep</span>
+        </a>
+        <span class="brand-note">Yue &amp; Fan</span>
+      </div>
+      <nav class="archive-nav" aria-label="旅行档案导航">
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">时间</button>
+          <div class="nav-menu" role="menu">
+            <a href="./index.html" role="menuitem">2026年 · 7月</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">地点</button>
+          <div class="nav-menu" role="menu">
+            <a href="./index.html" role="menuitem">成都</a>
+          </div>
+        </div>
+        <a class="nav-link active" href="./album.html">相册</a>
+      </nav>
+    </header>
+
+    <main class="album-page">
+      <section class="album-hero">
+        <p>Album Archive</p>
+        <h1>相册</h1>
+        <span>按地点保存每一次旅行的照片。现在先放成都这一组。</span>
+      </section>
+
+      <section class="album-city">
+        <div class="album-city-heading">
+          <p>2026年 · 7月</p>
+          <h2>成都</h2>
+        </div>
+        <a class="city-cover" href="./index.html#records">
+          <img src="./assets/hero-chengdu.png" alt="成都旅行相册封面" />
+          <div>
+            <span>2026年 · 7月</span>
+            <h2>hero-chengdu.png</h2>
+            <p>行程、地图和照片记录</p>
+          </div>
+        </a>
+        <div class="gallery-board" aria-label="成都照片预览">
+          <figure class="wide">
+            <img src="./assets/qingcheng-dujiangyan.png" alt="青城山和都江堰照片预览" />
+            <figcaption>qingcheng-dujiangyan.png</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/peoples-park-tea.png" alt="人民公园茶馆照片预览" />
+            <figcaption>peoples-park-tea.png</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/chengdu-night.png" alt="成都夜晚照片预览" />
+            <figcaption>chengdu-night.png</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026年 · 7月 · 成都 | Places We Keep</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a class="brand" href="#home" aria-label="回到首页">
+          <span>Places</span>
+          <span>We Keep</span>
+        </a>
+        <span class="brand-note">Yue &amp; Fan</span>
+      </div>
+      <nav class="archive-nav" aria-label="旅行档案导航">
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">时间</button>
+          <div class="nav-menu" role="menu">
+            <a href="#home" role="menuitem">2026年 · 7月</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">地点</button>
+          <div class="nav-menu" role="menu">
+            <a href="#home" role="menuitem">成都</a>
+          </div>
+        </div>
+        <a class="nav-link" href="./album.html">相册</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="journal-label">Places We Keep</p>
+          <h1>2026年 · 7月 · 成都</h1>
+          <p class="hero-text">五天时间，把茶馆、山水、街巷和夜色慢慢放进一段旅程。白天按路线走，回来以后用照片补上记忆。</p>
+          <div class="hero-actions" aria-label="页面快捷入口">
+            <a href="#planner">查看行程</a>
+            <a href="#records">看记录</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="./assets/hero-chengdu.png" alt="成都夏日城市街景氛围图" />
+        </figure>
+      </section>
+
+      <section class="overview" aria-label="旅行概览">
+        <article>
+          <span>日期</span>
+          <strong>7月27日 - 7月31日</strong>
+        </article>
+        <article>
+          <span>住宿建议</span>
+          <strong>春熙路 / 太古里附近</strong>
+        </article>
+        <article>
+          <span>节奏</span>
+          <strong>城市慢逛 + 山水自驾</strong>
+        </article>
+      </section>
+
+      <section id="planner" class="planner-section">
+        <div class="section-heading">
+          <p>Route Planner</p>
+          <h2>每日路线</h2>
+        </div>
+
+        <div class="day-tabs" role="tablist" aria-label="选择日期">
+          <button class="day-tab active" type="button" data-day="day-27">7月27日</button>
+          <button class="day-tab" type="button" data-day="day-28">7月28日</button>
+          <button class="day-tab" type="button" data-day="day-29">7月29日</button>
+          <button class="day-tab" type="button" data-day="day-30">7月30日</button>
+          <button class="day-tab" type="button" data-day="day-31">7月31日</button>
+        </div>
+
+        <div class="planner-grid">
+          <aside class="itinerary-panel" aria-live="polite">
+            <div class="day-kicker" id="day-kicker">抵达成都</div>
+            <h3 id="day-title">7月27日 · 城市初见</h3>
+            <p id="day-summary">入住后把节奏放慢，先用太古里和春熙路进入成都。</p>
+            <div id="route-list" class="route-list"></div>
+          </aside>
+
+          <section class="map-panel" aria-label="成都互动地图">
+            <div class="map-toolbar">
+              <span id="map-mode">当前路线</span>
+              <span id="route-count">3站</span>
+            </div>
+            <div class="city-map" id="city-map">
+              <svg viewBox="0 0 760 520" role="img" aria-labelledby="map-title map-desc">
+                <title id="map-title">成都旅行路线地图</title>
+                <desc id="map-desc">点击地点查看说明，加入今日路线后路线和当天行程会更新。</desc>
+                <defs>
+                  <filter id="pin-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#1f1b16" flood-opacity="0.16" />
+                  </filter>
+                </defs>
+                <rect class="map-paper" x="0" y="0" width="760" height="520" rx="0" />
+                <path class="map-land land-west" d="M42 98 C112 44 222 50 262 132 C308 230 236 308 148 298 C66 288 18 190 42 98Z" />
+                <path class="map-land land-center" d="M270 94 C392 42 514 88 560 184 C614 296 536 414 404 414 C288 414 214 306 230 198 C238 148 250 112 270 94Z" />
+                <path class="map-land land-east" d="M532 88 C626 72 722 128 734 226 C750 342 646 406 548 366 C464 332 444 218 492 150 C504 132 516 104 532 88Z" />
+                <path class="river" d="M34 336 C154 286 224 360 346 305 S556 235 724 286" />
+                <path class="road road-a" d="M96 142 C246 105 372 120 658 90" />
+                <path class="road road-b" d="M116 420 C280 365 454 405 652 340" />
+                <path class="road road-c" d="M210 72 C250 190 250 330 220 465" />
+                <path class="road road-d" d="M470 72 C440 190 455 340 510 460" />
+                <path class="road road-ring" d="M236 184 C318 108 484 120 548 204 C610 286 552 394 420 426 C300 454 200 378 196 276 C194 238 206 208 236 184Z" />
+                <path id="route-path" class="route-path" d="" />
+                <g id="map-pins"></g>
+              </svg>
+              <div class="map-legend">
+                <span><i class="legend-route"></i>今日路线</span>
+                <span><i class="legend-candidate"></i>可加入地点</span>
+              </div>
+            </div>
+          </section>
+
+          <aside class="place-panel" aria-live="polite">
+            <span class="place-type" id="place-type">街区</span>
+            <h3 id="place-name">太古里 / 春熙路</h3>
+            <p id="place-desc">抵达当天适合轻松逛，不安排复杂动线。</p>
+            <dl class="place-meta">
+              <div>
+                <dt>到下一站</dt>
+                <dd id="place-next">步行约12分钟</dd>
+              </div>
+              <div>
+                <dt>适合拍</dt>
+                <dd id="place-photo">街拍、夜景、城市细节</dd>
+              </div>
+              <div>
+                <dt>附近吃</dt>
+                <dd id="place-food">火锅、川菜小馆、甜品</dd>
+              </div>
+            </dl>
+            <button id="route-action" class="route-action" type="button">加入今日路线</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="food-section">
+        <div class="section-heading">
+          <p>Food Notes</p>
+          <h2>美食</h2>
+        </div>
+        <div class="food-grid">
+          <article class="food-feature">
+            <img src="./assets/peoples-park-tea.png" alt="成都本地美食氛围图" />
+            <div>
+              <span>Local Table</span>
+              <h3>每天一顿重点，其他慢慢吃</h3>
+              <p>这份清单按路线安排，不把吃饭变成赶场。火锅、串串、小吃、茶馆和夜宵都留位置。</p>
+            </div>
+          </article>
+          <div class="food-cards">
+            <article>
+              <span>火锅 / 串串</span>
+              <h3>火锅、冷锅串串、冒菜</h3>
+              <p>适合 27 号第一晚，或 29 号自驾回城后。住太古里附近就近选，少排队。</p>
+            </article>
+            <article>
+              <span>川菜小馆</span>
+              <h3>回锅肉、宫保鸡丁、水煮牛肉</h3>
+              <p>安排在 28 号或 30 号晚饭，选家常小馆比景区店更稳。</p>
+            </article>
+            <article>
+              <span>小吃面点</span>
+              <h3>钟水饺、甜水面、担担面</h3>
+              <p>人民公园、宽窄巷子、小通巷附近慢慢吃，适合边走边补。</p>
+            </article>
+            <article>
+              <span>茶馆 / 甜品</span>
+              <h3>盖碗茶、蛋烘糕、冰粉</h3>
+              <p>人民公园留一段完整时间。拍照、休息、吃甜的都放这里。</p>
+            </article>
+            <article>
+              <span>都江堰线</span>
+              <h3>青城山简餐，南桥晚饭</h3>
+              <p>29 号中午从简，晚上在南桥或灌县古城吃本地菜。</p>
+            </article>
+            <article>
+              <span>夜宵</span>
+              <h3>建设路、九眼桥、玉林</h3>
+              <p>熊猫基地当天看体力选一个方向，串串、小吃、酒馆都可以。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="records" class="records-section">
+        <div class="section-heading">
+          <p>Photo Records</p>
+          <h2>成都</h2>
+        </div>
+        <div class="records-layout">
+          <a class="record-feature" href="./album.html" aria-label="打开相册">
+            <img src="./assets/qingcheng-dujiangyan.png" alt="青城山和都江堰氛围图" />
+            <div>
+              <span>qingcheng-dujiangyan.png</span>
+              <h3>青城山和都江堰</h3>
+            </div>
+          </a>
+          <div class="record-stack">
+            <a href="./album.html">
+              <img src="./assets/peoples-park-tea.png" alt="人民公园茶馆氛围图" />
+              <span>peoples-park-tea.png</span>
+            </a>
+            <a href="./album.html">
+              <img src="./assets/chengdu-night.png" alt="成都夜晚散步氛围图" />
+              <span>chengdu-night.png</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
